@@ -8,6 +8,7 @@
 
 #import "TweetBuilder.h"
 #import "TwitterManager.h"
+#import "TweetObject.h"
 
 static TweetBuilder *tweetBuilder;
 
@@ -24,6 +25,19 @@ static TweetBuilder *tweetBuilder;
 }
 
 @end
+
+
+/*
+
+ This class uses the TwitterManger to download 20 tweets and use them to build tweets for the user as required.
+ 
+ It will also predict if more tweets are needed and download them in advance so there won't be any loading time between
+ tweets.
+ 
+ As more tweets gets downloaded to memory tweets that are not likely to be used will be removed from memory, to save space.
+ 
+*/
+
 
 @implementation TweetBuilder
 
@@ -73,12 +87,12 @@ static TweetBuilder *tweetBuilder;
 }
 
 
--(NSDictionary *)getUserInfoTweet
+-(TweetObject *)getUserInfoTweet
 {
     if(_isReady) {
         
         if (screenName != nil) {
-            return tweetArray[0];
+            return [TweetObject initWithDictinary:tweetArray[0] Offset:TweetOffsetCenter];
         }else {
             NSLog(@"No Screen Name, Set screen name first");
         }
@@ -88,7 +102,7 @@ static TweetBuilder *tweetBuilder;
 }
 
 
--(NSDictionary *)getNextTweet
+-(TweetObject *)getNextTweet
 {
     if(_isReady) {
         
@@ -120,7 +134,7 @@ static TweetBuilder *tweetBuilder;
                 }
             }
             
-            return tweet;
+            return [TweetObject initWithDictinary:tweet Offset:TweetOffsetRight];
             
         }else {
             
@@ -132,7 +146,7 @@ static TweetBuilder *tweetBuilder;
 }
 
 
--(NSDictionary *)getPreviousTweet
+-(TweetObject *)getPreviousTweet
 {
     
     if(_isReady) {
@@ -172,7 +186,7 @@ static TweetBuilder *tweetBuilder;
                 }
             }
             
-            return tweet;
+            return [TweetObject initWithDictinary:tweet Offset:TweetOffsetLeft];
             
         }else {
             
