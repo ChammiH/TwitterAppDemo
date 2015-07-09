@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		BB35BD4A1B4E1ED600EB0BDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB35BD491B4E1ED600EB0BDE /* main.m */; };
 		BB35BD4D1B4E1ED600EB0BDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB35BD4C1B4E1ED600EB0BDE /* AppDelegate.m */; };
-		BB35BD501B4E1ED600EB0BDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB35BD4F1B4E1ED600EB0BDE /* ViewController.m */; };
 		BB35BD531B4E1ED600EB0BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB35BD511B4E1ED600EB0BDE /* Main.storyboard */; };
 		BB35BD551B4E1ED600EB0BDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB35BD541B4E1ED600EB0BDE /* Images.xcassets */; };
 		BB35BD581B4E1ED600EB0BDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB35BD561B4E1ED600EB0BDE /* LaunchScreen.xib */; };
 		BB35BD641B4E1ED600EB0BDE /* TwitterAppDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB35BD631B4E1ED600EB0BDE /* TwitterAppDemoTests.m */; };
+		BB4C7F321B4E235F00C0E3F6 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4C7F2F1B4E235F00C0E3F6 /* MenuViewController.m */; };
+		BB4C7F331B4E235F00C0E3F6 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4C7F311B4E235F00C0E3F6 /* TwitterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		BB35BD491B4E1ED600EB0BDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BB35BD4B1B4E1ED600EB0BDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB35BD4C1B4E1ED600EB0BDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BB35BD4E1B4E1ED600EB0BDE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BB35BD4F1B4E1ED600EB0BDE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BB35BD521B4E1ED600EB0BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB35BD541B4E1ED600EB0BDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BB35BD571B4E1ED600EB0BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BB35BD5D1B4E1ED600EB0BDE /* TwitterAppDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterAppDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB35BD621B4E1ED600EB0BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB35BD631B4E1ED600EB0BDE /* TwitterAppDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterAppDemoTests.m; sourceTree = "<group>"; };
+		BB4C7F2E1B4E235F00C0E3F6 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		BB4C7F2F1B4E235F00C0E3F6 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		BB4C7F301B4E235F00C0E3F6 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
+		BB4C7F311B4E235F00C0E3F6 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +86,10 @@
 			children = (
 				BB35BD4B1B4E1ED600EB0BDE /* AppDelegate.h */,
 				BB35BD4C1B4E1ED600EB0BDE /* AppDelegate.m */,
-				BB35BD4E1B4E1ED600EB0BDE /* ViewController.h */,
-				BB35BD4F1B4E1ED600EB0BDE /* ViewController.m */,
+				BB4C7F2E1B4E235F00C0E3F6 /* MenuViewController.h */,
+				BB4C7F2F1B4E235F00C0E3F6 /* MenuViewController.m */,
+				BB4C7F301B4E235F00C0E3F6 /* TwitterViewController.h */,
+				BB4C7F311B4E235F00C0E3F6 /* TwitterViewController.m */,
 				BB35BD511B4E1ED600EB0BDE /* Main.storyboard */,
 				BB35BD541B4E1ED600EB0BDE /* Images.xcassets */,
 				BB35BD561B4E1ED600EB0BDE /* LaunchScreen.xib */,
@@ -219,8 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB35BD501B4E1ED600EB0BDE /* ViewController.m in Sources */,
+				BB4C7F331B4E235F00C0E3F6 /* TwitterViewController.m in Sources */,
 				BB35BD4D1B4E1ED600EB0BDE /* AppDelegate.m in Sources */,
+				BB4C7F321B4E235F00C0E3F6 /* MenuViewController.m in Sources */,
 				BB35BD4A1B4E1ED600EB0BDE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +424,7 @@
 				BB35BD691B4E1ED600EB0BDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB35BD6A1B4E1ED600EB0BDE /* Build configuration list for PBXNativeTarget "TwitterAppDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				BB35BD6C1B4E1ED600EB0BDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
