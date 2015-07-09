@@ -22,6 +22,12 @@
 @interface TwitterManager : NSObject
 
 +(TwitterManager *) sharedObject;
+-(BOOL) hasMoreTweets;
+-(void) loadNextTweets;
+-(void)resetScreenName;
+-(BOOL) hasPreviousTweets;
+-(void) loadPreviousTweets;
+-(void)setTimeLineIndex:(NSInteger) newIndex;
 -(void) getUserTimeLine:(NSString *)screenNameArg delegate:(id <TwitterManagerProtocol>) delegateArg;
 
 @end

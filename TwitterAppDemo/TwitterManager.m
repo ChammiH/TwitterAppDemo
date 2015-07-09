@@ -139,6 +139,92 @@ static TwitterManager *twitterManager;
     
 }
 
+
+-(void) loadNextTweets
+{
+    if (screenName != nil) {
+        
+        timelineIndex++;
+        if(timelineIndex > maxIndex) {
+            
+            maxIndex++;
+            NSDictionary *tweet = tweetArray[[tweetArray count] - 1];
+            
+            if(tweet != nil) {
+                
+                maxID = [NSString stringWithFormat:@"max_id=%@&", [tweet valueForKey:@"id_str"]];
+                [maxIDArray addObject:maxID];
+                
+            }else {
+                maxID = @"";
+            }
+        }else {
+            maxID = [maxIDArray objectAtIndex:timelineIndex];
+        }
+        [self getUserTimeLine:screenName delegate:delegate];
+        maxID = @"";
+        
+    }else {
+        NSLog(@"Must get user timeline first");
+    }
+}
+
+
+-(void) loadPreviousTweets
+{
+    if (screenName != nil) {
+        
+        timelineIndex--;
+        
+        if([maxIDArray count] > 1) {
+            
+            maxID = [maxIDArray objectAtIndex:timelineIndex];
+            
+            [self getUserTimeLine:screenName delegate:delegate];
+            maxID = @"";
+        }
+    }else {
+        NSLog(@"Must get user timeline first");
+    }
+}
+
+
+-(void)setTimeLineIndex:(NSInteger) newIndex
+{
+    if(newIndex <= maxIndex) {
+        timelineIndex = newIndex;
+    }else {
+        NSLog(@"Timeline Index can't exceed max index");
+    }
+}
+
+
+-(BOOL) hasMoreTweets
+{
+    if (([tweetArray count] == 20)) {
+        return true;
+    }else {
+        return false;
+    }
+}
+
+
+-(BOOL) hasPreviousTweets
+{
+    if(timelineIndex > 0) {
+        return true;
+    }else {
+        return false;
+    }
+}
+
+
+-(void)resetScreenName
+{
+    screenName = nil;
+}
+
+
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
     [dataRecieved appendData:data];
