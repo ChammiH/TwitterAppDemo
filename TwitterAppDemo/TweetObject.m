@@ -145,4 +145,34 @@ static NSString *screenName;
     [loadingLabel setText:@"Loading failed"];
 }
 
+
+-(CGRect) getOffsetLeftPosition
+{
+    return CGRectMake(10 - screenWidth, 10, screenWidth - 20, screenHeight - 20);
+}
+
+
+-(CGRect) getOffsetCenterPosition
+{
+    return CGRectMake(10, 10, screenWidth - 20, screenHeight - 20);
+}
+
+
+-(CGRect) getOffsetRightPosition
+{
+    return CGRectMake(10 + screenWidth, 10, screenWidth - 20, screenHeight - 20);
+}
+
+
++(NSString *) getScreenName
+{
+    return screenName;
+}
+
+
++(void) resetScreenName
+{
+    screenName = nil;
+}
+
 @end

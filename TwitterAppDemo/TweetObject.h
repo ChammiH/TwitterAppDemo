@@ -18,5 +18,10 @@ typedef NS_ENUM(NSInteger, TweetOffset) {
 @interface TweetObject : UIView
 
 +(TweetObject *) initWithDictinary:(NSDictionary *) tweetInfo Offset:(TweetOffset)offset;
++(void) resetScreenName;
++(NSString *) getScreenName;
+-(CGRect) getOffsetLeftPosition;
+-(CGRect) getOffsetCenterPosition;
+-(CGRect) getOffsetRightPosition;
 
 @end
