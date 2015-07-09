@@ -15,6 +15,7 @@
 		BB35BD641B4E1ED600EB0BDE /* TwitterAppDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB35BD631B4E1ED600EB0BDE /* TwitterAppDemoTests.m */; };
 		BB4C7F321B4E235F00C0E3F6 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4C7F2F1B4E235F00C0E3F6 /* MenuViewController.m */; };
 		BB4C7F331B4E235F00C0E3F6 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4C7F311B4E235F00C0E3F6 /* TwitterViewController.m */; };
+		BB4C7F361B4E284800C0E3F6 /* TwitterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4C7F351B4E284800C0E3F6 /* TwitterManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		BB4C7F2F1B4E235F00C0E3F6 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		BB4C7F301B4E235F00C0E3F6 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
 		BB4C7F311B4E235F00C0E3F6 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
+		BB4C7F341B4E284800C0E3F6 /* TwitterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterManager.h; sourceTree = "<group>"; };
+		BB4C7F351B4E284800C0E3F6 /* TwitterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				BB4C7F2F1B4E235F00C0E3F6 /* MenuViewController.m */,
 				BB4C7F301B4E235F00C0E3F6 /* TwitterViewController.h */,
 				BB4C7F311B4E235F00C0E3F6 /* TwitterViewController.m */,
+				BB4C7F341B4E284800C0E3F6 /* TwitterManager.h */,
+				BB4C7F351B4E284800C0E3F6 /* TwitterManager.m */,
 				BB35BD511B4E1ED600EB0BDE /* Main.storyboard */,
 				BB35BD541B4E1ED600EB0BDE /* Images.xcassets */,
 				BB35BD561B4E1ED600EB0BDE /* LaunchScreen.xib */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4C7F361B4E284800C0E3F6 /* TwitterManager.m in Sources */,
 				BB4C7F331B4E235F00C0E3F6 /* TwitterViewController.m in Sources */,
 				BB35BD4D1B4E1ED600EB0BDE /* AppDelegate.m in Sources */,
 				BB4C7F321B4E235F00C0E3F6 /* MenuViewController.m in Sources */,
